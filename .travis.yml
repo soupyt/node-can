@@ -5,9 +5,9 @@ node_js:
   - '12'
 dist: xenial
 install:
-  - sudo apt-get install -y can-utils
-  - sudo apt-get install -y nodejs-dev
-  - sudo apt-get install linux-modules-extra-$(uname -r)
+  - apt-get install -y can-utils
+  - apt-get install -y nodejs-dev
+  - apt-get install -y linux-modules-extra-$(uname -r)
 before_script:
   - npm install -g nodeunit
   - npm install
